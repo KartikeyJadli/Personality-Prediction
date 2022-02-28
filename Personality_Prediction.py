@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
-global Prerna,Butola,fl
+global K,J,fl
 
 def sumDigits(n):
     if n< 10:
@@ -12,32 +12,32 @@ def S():
     SoFn=0
     SoLn=0
     #Declaring variables globally so that they can be accessed easily
-    global Prerna,Butola,fl
-    Prerna,Butola = str(fl.get()).split()
+    global K,J,fl
+    K,J = str(fl.get()).split()
 
     #Checking the alphabets of first name
-    for i in range(0,len(Prerna)):
-        if Prerna[i] in  "ajsAJS":SoFn+=1
-        elif Prerna[i] in  "bktBKT":SoFn+=2
-        elif Prerna[i] in  "cluCLU":SoFn+=3
-        elif Prerna[i] in  "dmvDMV":SoFn+=4
-        elif Prerna[i] in  "enwENW":SoFn+=5
-        elif Prerna[i] in  "foxFOX":SoFn+=6
-        elif Prerna[i] in  "gpyGPY":SoFn+=7
-        elif Prerna[i] in  "hqzHQZ":SoFn+=8
-        elif Prerna[i] in  "irIR":SoFn+=9
+    for i in range(0,len(K)):
+        if K[i] in  "ajsAJS":SoFn+=1
+        elif K[i] in  "bktBKT":SoFn+=2
+        elif K[i] in  "cluCLU":SoFn+=3
+        elif K[i] in  "dmvDMV":SoFn+=4
+        elif K[i] in  "enwENW":SoFn+=5
+        elif K[i] in  "foxFOX":SoFn+=6
+        elif K[i] in  "gpyGPY":SoFn+=7
+        elif K[i] in  "hqzHQZ":SoFn+=8
+        elif K[i] in  "irIR":SoFn+=9
 
     #Checking the alphabets of second name
-    for i in range(0,len(Butola)):
-        if Butola[i] in  "ajsAJS":SoLn+=1
-        elif Butola[i] in  "bktBKT":SoLn+=2
-        elif Butola[i] in  "cluCLU":SoLn+=3
-        elif Butola[i] in  "dmvDMV":SoLn+=4
-        elif Butola[i] in  "enwENW":SoLn+=5
-        elif Butola[i] in  "foxFOX":SoLn+=6
-        elif Butola[i] in  "gpyGPY":SoLn+=7
-        elif Butola[i] in  "hqzHQZ":SoLn+=8
-        elif Butola[i] in  "irIR":SoLn+=9
+    for i in range(0,len(J)):
+        if J[i] in  "ajsAJS":SoLn+=1
+        elif J[i] in  "bktBKT":SoLn+=2
+        elif J[i] in  "cluCLU":SoLn+=3
+        elif J[i] in  "dmvDMV":SoLn+=4
+        elif J[i] in  "enwENW":SoLn+=5
+        elif J[i] in  "foxFOX":SoLn+=6
+        elif J[i] in  "gpyGPY":SoLn+=7
+        elif J[i] in  "hqzHQZ":SoLn+=8
+        elif J[i] in  "irIR":SoLn+=9
 
     SoFn = sumDigits(SoFn)
     SoLn = sumDigits(SoLn)
@@ -47,40 +47,40 @@ def S():
 
     #Messagebox is used to show a new box or window which contains the information
     if sum3 == 1:
-        messagebox.showinfo(Prerna + Butola,"The positive side of your personality is: Motivated, attentive to details, ambitious, self-confident, pioneering, independent\n\n The negative impact of yours on others is: Self-centered and Aggressive")
+        messagebox.showinfo(K + J,"The positive side of your personality is: Motivated, attentive to details, ambitious, self-confident, pioneering, independent\n\n The negative impact of yours on others is: Self-centered and Aggressive")
                 
     elif sum3 == 2:
-        messagebox.showinfo(Prerna + Butola,"The positive side of your personality is: Cooperative, modest, hard-working, empathetic, diplomatic\n\n The negative impact of yours on others is: Overly sensitive, uncertain, shy")
+        messagebox.showinfo(K + J,"The positive side of your personality is: Cooperative, modest, hard-working, empathetic, diplomatic\n\n The negative impact of yours on others is: Overly sensitive, uncertain, shy")
             
     elif sum3 == 3:
-        messagebox.showinfo(Prerna + Butola,"The positive side of your personality is: Artistic, entertaining, imaginative, social, inspiring, expressive, joyful\n\n The negative impact of yours on others is: Superficial, scattered")
+        messagebox.showinfo(K + J,"The positive side of your personality is: Artistic, entertaining, imaginative, social, inspiring, expressive, joyful\n\n The negative impact of yours on others is: Superficial, scattered")
                 
     elif sum3 == 4:
-        messagebox.showinfo(Prerna +  Butola,"The positive side of your personality is: Organized, practical, technical, honest, steady-minded\n\n The negative impact of yours on others is: Stubborn, inflexible")
+        messagebox.showinfo(K +  J,"The positive side of your personality is: Organized, practical, technical, honest, steady-minded\n\n The negative impact of yours on others is: Stubborn, inflexible")
             
     elif sum3 == 5:
-        messagebox.showinfo(Prerna + Butola,"The positive side of your personality is: Adaptable, personable, flexible, visionary, adventurous\n\n The negative impact of yours on others is: Impatient, unorganized, overcommitted")
+        messagebox.showinfo(K + J,"The positive side of your personality is: Adaptable, personable, flexible, visionary, adventurous\n\n The negative impact of yours on others is: Impatient, unorganized, overcommitted")
         
     elif sum3 == 6:
-        messagebox.showinfo(Prerna + Butola,"The positive side of your personality is: Just, considerate, giving, nurturing, protective, responsible, balanced, empathetic\n\n The negative impact of yours on others is: Self-sacrificing, interfering")
+        messagebox.showinfo(K + J,"The positive side of your personality is: Just, considerate, giving, nurturing, protective, responsible, balanced, empathetic\n\n The negative impact of yours on others is: Self-sacrificing, interfering")
 
     elif sum3 == 7:
-        messagebox.showinfo(Prerna + Butola,"The positive side of your personality is: Thoughtful, contemplative, rational, analytical, aware, understanding, studious\n\n The negative impact of yours on others is: Introverted, critical")
+        messagebox.showinfo(K + J,"The positive side of your personality is: Thoughtful, contemplative, rational, analytical, aware, understanding, studious\n\n The negative impact of yours on others is: Introverted, critical")
         
     elif sum3 == 8:
-        messagebox.showinfo(Prerna + Butola,"The positive side of your personality is: Efficient, well-planned, achieving, status-oriented, practical, power-seeking\n\n The negative impact of yours on others is: Over-ambitious, materialistic")
+        messagebox.showinfo(K + J,"The positive side of your personality is: Efficient, well-planned, achieving, status-oriented, practical, power-seeking\n\n The negative impact of yours on others is: Over-ambitious, materialistic")
         
     elif sum3 == 9:
-        messagebox.showinfo(Prerna + Butola,"The positive side of your personality is: Caring, sensitive, creative, giving, humanitarian, selfless, creative\n\n The negative impact of yours on others is: Withdrawn, not open with one's self or others")
+        messagebox.showinfo(K + J,"The positive side of your personality is: Caring, sensitive, creative, giving, humanitarian, selfless, creative\n\n The negative impact of yours on others is: Withdrawn, not open with one's self or others")
         
     if sum3 == 10:
-        messagebox.showinfo(Prerna + Butola,"The positive side of your personality is: Motivated, attentive to details, ambitious, self-confident, pioneering, independent\n\n The negative impact of yours on others is: Self-centered and Aggressive")
+        messagebox.showinfo(K + J,"The positive side of your personality is: Motivated, attentive to details, ambitious, self-confident, pioneering, independent\n\n The negative impact of yours on others is: Self-centered and Aggressive")
         
     elif sum3 == 11:
-        messagebox.showinfo(Prerna + Butola,"The positive side of your personality is: Inventive, intuitive, visionary\n\n The negative impact of yours on others is: Emotional, unsatisfied")
+        messagebox.showinfo(K + J,"The positive side of your personality is: Inventive, intuitive, visionary\n\n The negative impact of yours on others is: Emotional, unsatisfied")
         
     elif sum3 == 22:
-        messagebox.showinfo(Prerna + Butola,"The positive side of your personality is: Successful, spiritual, controlled, powerful\n\n The negative impact of yours on others is: Controlling, insensitive")
+        messagebox.showinfo(K + J,"The positive side of your personality is: Successful, spiritual, controlled, powerful\n\n The negative impact of yours on others is: Controlling, insensitive")
 
 #Building the GUI 
 P = Tk()
