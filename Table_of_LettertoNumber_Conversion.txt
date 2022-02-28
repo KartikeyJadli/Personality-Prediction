@@ -1,0 +1,23 @@
+Onomatology Letter to Number Conversion Table
+
+
+Corresponding Number	Letters A-I	Letters J-R	Letters S-Z
+
+1                          A               J                 S
+
+2                          B		   K                 T
+
+3                          C               L                 U
+
+4                          D               M                 V
+
+5                          E               N                 W
+
+6                          F               O                 X
+
+7                          G               P                 Y
+
+8                          H               Q                 Z
+
+9                          I               R
+
